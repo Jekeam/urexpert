@@ -17,6 +17,14 @@ html {
 
 .process .inside {
     height: 100%;
+    max-width: 1090px;
+}
+
+.inside {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1090px;
+    padding: 0 10px 0 10px;
 }
 
 .process-content h1 {
@@ -46,7 +54,7 @@ html {
 }
 
 .process-slideCommiter .fill {
-    background: #ee3054;
+    background: #d63c35;
     height: 100%;
     width: 0;
 }
@@ -61,7 +69,7 @@ html {
     height: 38px;
     border: 1px solid #e0e0e0;
     background: none;
-    color: #ee3054;
+    color: #d63c35;
     text-align: center;
     line-height: 36px;
     font-size: 14px;
@@ -79,9 +87,9 @@ html {
 .process-slidePointer-happened:hover,
 .wl6 .process-slidePointer-happened,
 .wl6 .process-slidePointer-happened:hover {
-    background: #ee3054;
+    background: #d63c35;
     color: #fff;
-    border-color: #ee3054;
+    border-color: #d63c35;
     text-decoration: none;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -128,7 +136,7 @@ html {
 }
 
 .process-number {
-    color: #ee3054;
+    color: #d63c35;
     font-size: 210px;
     font-weight: bold;
     width: 40%;
@@ -161,9 +169,11 @@ html {
 }
 
 .process-proc {
+    padding-top: 40px;
+    padding-bottom: 0px;
     z-index: 6;
     position: relative;
-    background: #ee3054;
+    background: #d63c35;
     overflow: hidden;
 }
 
@@ -297,7 +307,7 @@ html {
 }
 
 .process-colNumber {
-    background: #ee3054;
+    background: #d63c35;
     border-radius: 100px;
     height: 85px;
     width: 85px;
@@ -325,12 +335,12 @@ html {
 }
 
 .process-col:hover .process-colBg {
-    background: #ee3054;
+    background: #d63c35;
 }
 
 .process-col:hover .process-colNumber {
     background: #fff;
-    color: #ee3054;
+    color: #d63c35;
 }
 
 .process-col:hover .process-colText {
@@ -353,11 +363,11 @@ html {
 .process-pipes {
     position: relative;
     z-index: 6;
-    background: #fff;
+    background: #fff !important;
 }
 
 .process-pipesBg {
-    background: url(bg.png) repeat-x center center;
+    background: url(bg2.png) repeat-x center center;
     background-attachment: fixed;
     position: relative;
 }
@@ -413,7 +423,7 @@ html {
     width: 100px;
     height: 100px;
     position: absolute;
-    background-image: url(icons.png);
+    background-image: url(icons2.png);
     background-repeat: no-repeat;
 }
 
