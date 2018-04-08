@@ -169,8 +169,9 @@ html {
 }
 
 .process-proc {
+    /*
     padding-top: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 40px;*/
     z-index: 6;
     position: relative;
     background: #d63c35;
@@ -597,4 +598,506 @@ html {
 
 .process-pipe-last .pipe-text {
     margin-top: 20px;
+}
+
+
+/* process adaptive */
+
+.hg8 .process-slogan {
+    padding-top: 290px;
+}
+
+.h78 .process-slogan {
+    padding-top: 270px;
+}
+
+.h775 .process-slogan {
+    padding-top: 230px;
+}
+
+.h67 .process-slogan {
+    padding-top: 200px;
+}
+
+.h665 .process-slogan {
+    padding-top: 180px;
+}
+
+.h56 .process-slogan {
+    padding-top: 155px;
+}
+
+.h555 .process-slogan {
+    padding-top: 140px;
+}
+
+.h45 .process-slogan {
+    padding-top: 120px;
+}
+
+.hg8 .process-figure {
+    margin-top: -198px;
+}
+
+.h78 .process-figure {
+    margin-top: -198px;
+}
+
+.h775 .process-figure {
+    margin-top: -224px;
+}
+
+.h67 .process-figure {
+    margin-top: -240px;
+}
+
+.h665 .process-figure {
+    margin-top: -240px;
+}
+
+.h56 .process-figure {
+    margin-top: -230px;
+    margin-left: -150px;
+    width: 300px;
+    height: auto;
+}
+
+.h555 .process-figure {
+    margin-top: -210px;
+    margin-left: -125px;
+    width: 250px;
+    height: auto;
+}
+
+.h45 .process-figure {
+    margin-top: -200px;
+    margin-left: -110px;
+    width: 220px;
+    height: auto;
+}
+
+.wl6 .process-figure {
+    width: 140px;
+    height: auto;
+    margin-top: -70px;
+    margin-left: -70px;
+}
+
+.wl6 .process-slogan {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 170px;
+}
+
+.w810 .process-pagination,
+.w68 .process-pagination {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.w810 .process-slidePointer,
+.w68 .process-slidePointer {
+    margin-bottom: 20px;
+}
+
+.w810 .process-slideCommiter,
+.w68 .process-slideCommiter {
+    margin-top: -20px;
+}
+
+.w810 .process-slideCommiter-5,
+.w68 .process-slideCommiter-5 {
+    display: none;
+}
+
+.w810 .process-slide,
+.w68 .process-slide {
+    width: 100%;
+}
+
+.w810 .process-number,
+.w68 .process-number {
+    width: 20%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.w810 .process-text,
+.w68 .process-text {
+    width: 55%;
+    padding-left: 15%;
+}
+
+.w68 .process-number {
+    width: 10%;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 100px;
+}
+
+.w68 .process-text {
+    width: 60%;
+    padding-left: 15%;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.w68 .process-sliderBg,
+.w68 .process-sliderBody {
+    min-height: 300px;
+    line-height: 300px;
+}
+
+.w68 .process-pagination {
+    margin-top: 35px;
+}
+
+.w810 .process-col,
+.w68 .process-col {
+    width: 50%;
+}
+
+.w68 .process-colInner {
+    padding: 0 10px;
+}
+
+.w68 .process-flag,
+.wl6 .process-flag {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-top: 15px;
+}
+
+.w68 .process-proc,
+.wl6 .process-proc {
+    text-align: center;
+}
+
+.w68 .process-proc h2,
+.wl6 .process-proc h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.wl6 .process-proc h2 {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.wl6 .process-pagination {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.wl6 .process-slideCommiter-4,
+.wl6 .process-slideCommiter-8 {
+    display: none;
+}
+
+.wl6 .process-slidePointer {
+    margin-bottom: 20 !important;
+    vertical-align: top;
+}
+
+.wl6 .process-slideCommiter {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 30px !important;
+    vertical-align: top;
+}
+
+.wl6 .process-number {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 200px;
+    display: block;
+}
+
+.wl6 .process-text {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.wl6 .process-slide {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.wl6 .process-sliderBg,
+.wl6 .process-sliderBody {
+    min-height: 280px;
+    line-height: 280px;
+}
+
+.wl6 .process-col {
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 0;
+}
+
+.wl6 .process-colBg {
+    min-height: 0;
+}
+
+.wl6 .process-colInner {
+    padding: 0;
+}
+
+.w810 .process-flag,
+.w810 .process-begin,
+.touch .process-flag,
+.touch .process-begin {
+    display: none;
+}
+
+.w810 .process-proc .process-line,
+.touch .process-proc .process-line {
+    margin-bottom: 0;
+}
+
+.w68 .process-pipesBg,
+.wl6 .process-pipesBg,
+.touch .process-pipesBg {
+    background: none;
+    padding-top: 20px;
+}
+
+.w68 .process-pipeTop,
+.w68 .process-pipe,
+.w68 .process-pipe-inter,
+.w68 .process-pipe-last,
+.wl6 .process-pipeTop,
+.wl6 .process-pipe,
+.wl6 .process-pipe-inter,
+.wl6 .process-pipe-last,
+.touch .process-pipeTop,
+.touch .process-pipe,
+.touch .process-pipe-inter,
+.touch .process-pipe-last {
+    background: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 0;
+    margin: 0;
+    padding: 15px 0;
+    height: auto;
+}
+
+.w68 .pipe-text,
+.w68 .pipe,
+.wl6 .pipe-text,
+.wl6 .pipe,
+.touch .pipe-text,
+.touch .pipe {
+    position: relative;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    text-align: left;
+}
+
+.wl6 .process-pipeBottom {
+    height: 0;
+}
+
+.w68 .pipe-text,
+.touch .pipe-text {
+    max-width: 430px;
+    padding-left: 20px;
+}
+
+.wl6 .pipe-text {
+    max-width: 280px;
+    width: 55%;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.w68 .pipe1,
+.wl6 .pipe1,
+.touch .pipe1 {
+    background-position: -108px 0;
+}
+
+.w68 .pipe2,
+.wl6 .pipe2,
+.touch .pipe2 {
+    background-position: -108px -101px;
+}
+
+.w68 .pipe3,
+.wl6 .pipe3,
+.touch .pipe3 {
+    background-position: -108px -208px;
+}
+
+.w68 .pipe4,
+.wl6 .pipe4,
+.touch .pipe4 {
+    background-position: -108px -316px;
+}
+
+.w68 .pipe5,
+.wl6 .pipe5,
+.touch .pipe5 {
+    background-position: -108px -425px;
+}
+
+.w68 .pipe6,
+.wl6 .pipe6,
+.touch .pipe6 {
+    background-position: -111px -533px;
+}
+
+.w68 .pipe7,
+.wl6 .pipe7,
+.touch .pipe7 {
+    background-position: -112px -642px;
+}
+
+.w68 .pipe8,
+.wl6 .pipe8,
+.touch .pipe8 {
+    background-position: -113px -750px;
+}
+
+.w68 .pipe9,
+.wl6 .pipe9,
+.touch .pipe9 {
+    background-position: -114px -859px;
+}
+
+.w68 .pipe10,
+.wl6 .pipe10,
+.touch .pipe10 {
+    background-position: -116px -967px;
+}
+
+.w68 .pipe11,
+.wl6 .pipe11,
+.touch .pipe11 {
+    background-position: -118px -1073px;
+}
+
+.w68 .pipe12,
+.wl6 .pipe12,
+.touch .pipe12 {
+    background-position: -115px -1179px;
+}
+
+.wl6 .process-cols {
+    padding-top: 10px;
+}
+
+.wl6 .process-col {
+    text-align: left;
+}
+
+.wl6 .process-col:hover .process-colBg {
+    background: #fff;
+}
+
+.wl6 .process-colBg {
+    text-align: left;
+}
+
+.wl6 .process-colNumber {
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    line-height: 68px;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.wl6 .process-col:hover .process-colNumber {
+    color: #fff;
+    background: #ee3054;
+}
+
+.wl6 .process-colText {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 280px;
+    width: 65%;
+}
+
+.wl6 .process-col:hover .process-colText {
+    color: #666;
+}
+
+.w68 .process-limit,
+.wl6 .process-limit {
+    overflow: hidden;
+}
+
+.wl6 .process-showAll {
+    background: #ee3054;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wl6 .process-cols {
+    padding-bottom: 0px;
+}
+
+.hg8.w68 .process-slogan {
+    padding-top: 230px;
+}
+
+.h78.w68 .process-slogan {
+    padding-top: 210px;
+}
+
+.h775.w68 .process-slogan {
+    padding-top: 180px;
+}
+
+.h67.w68 .process-slogan {
+    padding-top: 150px;
+}
+
+.h665.w68 .process-slogan {
+    padding-top: 130px;
+}
+
+.h56.w68 .process-slogan {
+    padding-top: 105px;
+}
+
+.h555.w68 .process-slogan {
+    padding-top: 90px;
+}
+
+.h45.w68 .process-slogan {
+    padding-top: 80px;
 }
