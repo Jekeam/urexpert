@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/img/social.png">
+    <meta itemprop="image" content="/img/social.png">
+    <link rel="image_src" href="/img/social.png">
+    <link rel="canonical" href="/">
+    <title>Получите возмещение сразу после ДТП без визитов в страховую по ОСАГО или КАСКО</title>
+    <meta name="description" content="Проводим бесплатную экспресс-оценку ущерба и производим выплату без обращения в страховую. Получите страховое возмещение по ОСАГО или КАСКО на следующий день после ДТП!">
+    <meta name="keywords" content="бесплатная оценка ущерба полсе ДТП, получить страховое возмещение, страховое возмещение по ОСАГО и КАСКО">
+    <!-- css -->
+    <link href="src/bootstrap.css" rel="stylesheet">
+    <link href="src/style-v3.css" rel="stylesheet">
+    <!--link href="src/jplayer.blue.monday.css" rel="stylesheet"-->
+    <!--link href="src/1a01607fb5.css" media="all" rel="stylesheet"-->
+    <link rel="stylesheet" href="src/media.css" media="all and (max-width: 900px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/jquery.fancybox.min.css" rel="stylesheet">
+
+    <script src="src/jquery.min.js"></script>
+    <script src="src/bootstrap.js"></script>
+
+    <link rel="icon" href=​ "favicon.ico" type="image/x-icon">
+
+</head>
+
+<body class="new">
+    <header class="affix-top">
+        <div class="container inthemiddle">
+            <div class="brand col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <a class="navbar-brand" href="/">
+                    <img src="src/ppologo.png" alt="Компания РусЭксперт">
+                </a>
+            </div>
+            <div class="col-xs-6 hidden-sm col-md-6 col-lg-6 adress hidden-xs">
+                <a id="drop" href="/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                    <span class="contact-city">Головной офис (Уфа)</span> <span class="caret"></span>
+                </a>
+                <!--ul id="header-contact" class="contact-list dropdown-menu" role="menu" aria-labelledby="drop">
+                    <li alt="г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21, тел:8(347)293-40-06;">Головной офис (Уфа)</li>
+                    <li alt="(992) 003-9328; ул. Горького, 39, оф. 101">Екатеринбург</li>
+                    <li alt="(3452) 60-995; ул. Володарского, 22">Тюмень</li>
+                </ul-->
+                <p class="contact-text">г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21</p>
+                <p class="contact-text">
+                    Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-5 action">
+                <!--a class="btn btn-primary hidden-xs" href="/consultasia">Оставить заявку</a-->
+                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
+            </div>
+            <!--div class="col-xs-4 col-sm-6 col-md-1 col-lg-1 menu">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div-->
+            <!--div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 visible-xs phone">
+                <a href="tel:+78005557657">8(800)555-76-57</a>
+                <a href="tel:+73472934006">8(347)293-40-06</a>
+            </div-->
+        </div>
+        <!--div class="menu">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <h4>Услуги по ОСАГО</h4>
+                        <ul>
+                            <li><a data-toggle="modal" data-target="#mySignup">Выплата</a></li>
+                            <li><a data-toggle="modal" data-target="#mySignup">Ремонт</a></li>
+                            <li><a href="/doplata-po-osago.html">Доплата</a></li>
+                            <li><a href="/total-loss.html">Полная гибель ТС</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <h4>Другие услуги</h4>
+                        <ul>
+                            <li><a href="/casco.html">Выплаты по Каско </a></li>
+                            <li><a href="/expert.html">Независимая экспертиза</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <h4>О проекте</h4>
+                        <ul>
+                            <li><a href="/about.html">Раскрытие информации</a></li>
+                            <li><a href="/cooperation">Сотрудничество</a></li>
+                            <li><a href="/example">Портфолио</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <h4>Полезная информация</h4>
+                        <ul>
+                            <li><a href="/news">Блог/Новости</a></li>
+                            <li><a href="/docs">Образцы документов</a></li>
+                            <li><a href="/FAQ">Вопрос-Ответ</a></li>
+                            <li><a href="/kontakty.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Свяжитесь с нами: <a href="mailto:suinegne@gmail.com" class="contact">mail@my_domain.ru</a>
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
+                        <a href="viber://forward?text=my_domain.ru+79219304728" class="icon"><img src="src/viber.png" alt="Viberl"></a>
+                        <a href="https://telegram.me/share/url?url=my_domain.ru&amp;text=+79219304728" class="icon"><img src="src/telegram_logo.png" alt="Telegram"></a>
+                        <a href="whatsapp://send?text=my_domain.ru+79219304728" data-action="share/whatsapp/share" class="icon"><img src="src/whatsapp.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+        </div-->
+    </header>
+    <section class="content index">
+        <div class="index-screen">
+            <div class="container">
+                <h1 class="text-center"><strong>Выплаты по ОСАГО и КАСКО сразу после ДТП</strong></h1>
+                <p class="h2 text-center">легальное возмещение ущерба в полном объеме</p>
+                <!--h1 class="text-center"><strong>Получите страховое возмещение после ДТП по ОСАГО или КАСКО</strong>
+                    <p class="h2 text-center">через 24 часа после нашей бесплатной экспресс-оценки</p-->
+                <div class="image">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-7 col-lg-7 text-right"></div>
+                        <div class="col-sm-4 col-md-5 col-lg-5 text-left">
+                            <h2><a data-toggle="modal" data-target="#mySignup">Деньги через 24 часа</a></h2>
+                            <p>— Выплата без обращений в страховую
+                                <br> — Предварительная оценка по интернету
+                                <br> — Бесплатная диагностика
+                            </p>
+                            <a class="btn btn-gray" data-toggle="modal" data-target="#mySignup">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i> Получить выплату <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 col-md-7 col-lg-7 text-right"></div>
+                        <div class="col-sm-4 col-md-5 col-lg-5 text-left">
+                            <p>
+                                <h2><a data-toggle="modal" data-target="#mySignup">Страховая не платит или<br>Выплатили мало?</a></h2>
+                                <p>— Взыскать 100% ущерб со страховой
+                                    <br> — Бесплатная диагностика
+                                    <br> — Быстрое оформление
+                                </p>
+                                <a class="btn btn-gray" data-toggle="modal" data-target="#mySignup">
+                                    <i class="fa fa-caret-left" aria-hidden="true"></i> Взыскать ущерб в полном объеме <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-center"><strong></strong></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="process-pipes">
+            <div class="inside">
+                <div class="process-pipesBg process-limit" data-session="1">
+                    <div class="process-pipeTop process-limit-pointer">
+                        <div class="pipe pipe1"></div>
+                        <div class="pipe-text pipe-text-right">Клиент выходит с нами на связь, через сайт или по телефону</div>
+                    </div>
+                    <div class="process-pipe process-limit-pointer">
+                        <div class="pipe pipe-left pipe2"></div>
+                        <div class="pipe-text pipe-text-left">Мы просим заполнить форму брифа для нового проекта</div>
+                    </div>
+                    <div class="process-pipe-inter process-limit-pointer">
+                        <div class="pipe pipe-right pipe3"></div>
+                        <div class="pipe-text pipe-text-right">Созваниваемся по телефону и приглашаем клиента в офис</div>
+                    </div>
+                    <div class="process-pipe process-limit-pointer">
+                        <div class="pipe pipe-left pipe4"></div>
+                        <div class="pipe-text pipe-text-left">Оцениваем, подходит ли наша квалификация для клиента</div>
+                    </div>
+                    <div class="process-pipe-inter process-limit-pointer">
+                        <div class="pipe pipe-right pipe5"></div>
+                        <div class="pipe-text pipe-text-right">Оцениваем, подходит ли клиент под нашу квалификацию</div>
+                    </div>
+                    <div class="process-pipe process-limit-pointer">
+                        <div class="pipe pipe-left pipe6"></div>
+                        <div class="pipe-text pipe-text-left one-string">Пониманием цели и виденье клиента</div>
+                    </div>
+
+                    <div class="process-pipe-inter process-limit-pointer">
+                        <div class="pipe pipe-right pipe7"></div>
+                        <div class="pipe-text pipe-text-right">Согласовываем ожидаемые результаты</div>
+                    </div>
+                    <div class="process-pipe process-limit-pointer">
+                        <div class="pipe pipe-left pipe8"></div>
+                        <div class="pipe-text pipe-text-left one-string">Планируем итерации работ</div>
+                    </div>
+                    <div class="process-pipe-inter process-limit-pointer">
+                        <div class="pipe pipe-right pipe9"></div>
+                        <div class="pipe-text pipe-text-right">Планируем персонал на итерации в совместной системе планирования</div>
+                    </div>
+                    <div class="process-pipe process-limit-pointer">
+                        <div class="pipe pipe-left pipe10"></div>
+                        <div class="pipe-text pipe-text-left one-string">Подписываем контракт</div>
+                    </div>
+
+                    <div class="process-pipe-inter process-limit-pointer">
+                        <div class="pipe pipe-right pipe11"></div>
+                        <div class="pipe-text pipe-text-right">Получаем оплату за первую и вторую итерации</div>
+                    </div>
+                    <div class="process-pipe-last process-limit-pointer">
+                        <div class="pipe pipe-left pipe12"></div>
+                        <div class="pipe-text pipe-text-left">Начинаем работать</div>
+                    </div>
+
+                    <div class="process-pipeBottom"></div>
+                </div>
+                <div class="process-showAll phonesOnly" data-session="1">Показать все</div>
+            </div>
+        </div>
+
+        <!--div class="color">
+            <div class="container">
+                <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 title">
+                    <h2>Как мы работаем?</h2>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                    <div class="video">
+                        <!--iframe width="560" height="315" src="https://www.youtube.com/embed/LB0fgx9jv30?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+        <!--div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+                            <div class="jp-type-single">
+                                <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 640px; height: auto;"><img id="jp_poster_0" style="width: 640px; height: auto; display: inline;" src="src/final.png"><video id="jp_video_0" preload="metadata" style="width: 0px; height: 0px;" src="/video/final.webm" title="Ремонт с компанией ПлатимпоОСАГО"></video></div>
+                                <div class="jp-gui">
+                                    <div class="jp-video-play" id="jp-video-play" style="display: block;">
+                                        <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                                    </div>
+                                    <div class="jp-interface">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar" style="width: 100%;">
+                                                <div class="jp-play-bar" style="width: 0%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                        <div class="jp-duration" role="timer" aria-label="duration">-00:45</div>
+                                        <div class="jp-details">
+                                            <div class="jp-title" aria-label="title">Ремонт с компанией ПлатимпоОСАГО</div>
+                                        </div>
+                                        <div class="jp-controls-holder">
+                                            <div class="jp-volume-controls">
+                                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                                <div class="jp-volume-bar">
+                                                    <div class="jp-volume-bar-value" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-controls">
+                                                <button class="jp-play" role="button" tabindex="0">play</button>
+                                                <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                            </div>
+                                            <div class="jp-toggles">
+                                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                                <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-no-solution" style="display: none;">
+                                    <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                </div>
+                            </div>
+                        </div- ->
+
+                    </div>
+                </div>
+            </div>
+        </div-->
+
+        <!--div class="portfolio">
+            <div class="container">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4>Уже получили свои деньги:</h4>
+                    <div class="row">
+                        <! --script type="text/javascript" async="" src="src/analytics.js"></script>
+                        <script type="text/javascript" async="" src="src/watch.js"></script>
+                        <script type="text/javascript" async="" src="src/watch.js"></script>
+                        <script type="text/javascript" src="src/ajax_loadblock.js"></script- ->
+                        <div id="news1450081636">
+                            <div class="col-sm-6 col-md-4 col-lg-4 design">
+                                <a class="portfolio-main-page" title="MITSUBISHI OUTLANDER, 2011г.в." href="/category-example/MITSUBISHI-OUTLANDER-txt" style="height: 554px;">
+                                    <div class="image"><img src="src/news-16644-rus-mitsubisi.jpg" alt="MITSUBISHI OUTLANDER, 2011г.в." data-tag="1"></div>
+                                    <h4>Выплатили на<br> 40 000 руб. больше</h4>
+                                    <hr>
+                                    <h5>Honda CR-V<br>Пробег 51 000 км., 2014 года<br> Cтраховая насчитала 261 000 рублей<br> Наша компания посчитала на 301 000
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 design">
+                                <a class="portfolio-main-page" title="MERCEDES E230, 2007 г.в." href="/category-example/MERCEDES-E230--2007-g-v--txt" style="height: 554px;">
+                                    <div class="image"><img src="src/news-16648-rus-mersedes_e.jpg" alt="MERCEDES E230, 2007 г.в." data-tag="1"></div>
+                                    <h4>MERCEDES E230, 2007 г.в.</h4>
+                                    <h5>
+
+                                    </h5>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-4 design">
+                                <a class="portfolio-main-page" title="MAZDA 323, 1999 г.в." href="/category-example/MAZDA-323--1999-g-v--txt" style="height: 554px;">
+                                    <div class="image"><img src="src/news-16645-rus-mazda_323_1.jpg" alt="MAZDA 323, 1999 г.в." data-tag="1"></div>
+                                    <h4>MAZDA 323, 1999 г.в.</h4>
+                                    <h5>Дата; 08.01.2018 г.&nbsp;<br>Автомобиль: MAZDA 323<br>Регион: Санкт-Петербург<br>Выплата: 40<span>.000</span>&nbsp;руб.</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <! --div class="col-sm-12 col-md-12 col-lg-12"><a href="/example" class="nextpage"><i class="fa fa-link"></i> Все выплаты</a></div- ->
+            </div>
+        </div-->
+        <div class="portfolio">
+            <div class="container" style="padding-bottom:40px">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><span>Уже получили деньги</span></h2>
+                    <br>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <wrapper>
+                        <div id="dws-slider" class="carousel slide" data-ride="carousel">
+                            <!--Показатели-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#dws-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#dws-slider" data-slide-to="1"></li>
+                                <li data-target="#dws-slider" data-slide-to="2"></li>
+                            </ol>
+
+                            <!--Обертка для слайдов-->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="src/Lada-Granta-3.jpg" alt="Lada-Granta">
+                                    <div class="carousel-caption">
+                                        <h3 class="text-uppercase">+ 32 000 ₽</h3>
+                                        <p>Страховая насчитала 72 000 ₽<br> Наша компания выплатила 104 000 ₽<br> Разница в 31%</p>
+                                    </div>
+                                </div>
+                                <div class="item"><img src="src/Kia-Rio-1.jpg" alt="Kia-Rio">
+                                    <div class="carousel-caption">
+                                        <h3 class="text-uppercase">+ 15 000 ₽</h3>
+                                        <p>Страховая насчитала 44 000 ₽<br> Наша компания выплатила 59 000 ₽<br> Разница в 26%</p>
+                                    </div>
+                                </div>
+                                <div class="item"><img src="src/honda-crv-2.jpg" alt="honda-cr">
+                                    <div class="carousel-caption">
+                                        <h3 class="text-uppercase">+ 40 000 ₽</h3>
+                                        <p>Страховая насчитала 261 000₽
+                                            <br>Наша компания выплатила 301 000 ₽<br> Разница в 15%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Элементы управления-->
+                            <a class="left carousel-control" href="#dws-slider" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#dws-slider" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </wrapper>
+                    <script>
+                        $('.carousel').carousel({
+                            interval: 6000
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--div class="white faq">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><span>FAQ:</span> популярные вопросы</h2>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 height200" style="height: 228px;">
+                            <h4><b class="number fa fa-info"></b> Сколько я должен буду заплатить за вашу работу?
+                            </h4>
+                            <p>
+                                Вы ничего не платите. Наша прибыль - разница между выплатой и взысканными со страховой компании суммами, а со страховой компании мы гарантированно взыщем все 100%, причитающиеся по Закону.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 height200" style="height: 228px;">
+                            <h4><b class="number fa fa-info"></b> Возможно ли отремонтировать ТС, если у виновника на момент ДТП отсутствует полис ОСАГО?
+                            </h4>
+                            <p>
+                                Вероятнее всего, нет. Если у виновника отсутствует полис обязательного страхования гражданской ответственности, то страховое возмещение потерпевший может получить только с виновника напрямую, либо через суд. В том случае, если виновное лицо не было вписано
+                                в полис, или период использования ТС по полису закончился -
+                                <strong>мы организуем ремонт</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 height200" style="height: 228px;">
+                            <h4><b class="number fa fa-info"></b> В какой момент к вам можно обращаться?
+                            </h4>
+                            <p>
+                                В любой. Даже если только что произошло ДТП, а его разбора ещё не было, мы можем осмотреть автомобиль, подготовить всё для ремонта и подписать с вами договор. После получения справок о ДТП по результату его рассмотрения, вы можете сразу ехать на ремонт.
+                                Однако, не стоит забывать об <strong>исковых сроках давности</strong>: по КАСКО следует обратиться в течение 2 лет для получения страхового возмещения, по ОСАГО исковой срок составляет 3
+                                года.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 height200" style="height: 228px;">
+                            <h4><b class="number fa fa-info"></b> Обязательно ли к вам приезжать?
+                            </h4>
+                            <p>
+                                Нет, удобнее оформить заявку самостоятельно. Вы можете сделать фотографии автомобиля с 8-ми ракурсов плюс показания спидометра и подробные фотографии повреждений. Отправьте их нам на почту вместе с документами по ДТП. Или
+                                <a data-target="#mySignup" data-toggle="modal">оставьте заявку на сайте</a>. Наши специалисты проведут предварительную оценку и свяжутся с вами для координации дальнейших действий.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <!- -a href="/FAQ" class="nextpage"><i class="fa fa-link"></i> Все вопросы</a- ->
+                </div>
+            </div>
+        </div-->
+
+        <div class="white">
+            <div class="container">
+                <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 title">
+                    <h2><span>Как воспользоваться нашими услугами?</span></h2>
+                    <p>С проектом «РусЭксперт» процесс выплаты возмещения стал проще и быстрее: получить свои деньги можно за 24 часа.</p>
+                </div>
+                <div class="col-sm-8 col-md-7 col-lg-7 right column" style="height: 494px;">
+                    <h4><a data-target="#mySignup" data-toggle="modal">Оставьте заявку</a></h4>
+                    <p>Вы можете как самостоятельно сфотографировать свой автомобиль и прислать нам фотографии, так и подъехать к нам в офис в удобное для вас время.
+                    </p>
+                    <h4>Примите решение</h4>
+                    <p>Мы не станем настаивать и торопить вас. Примите взвешенное решение - ознакомьтесь с примерами выплат, получить компенсацию ущерба наличными деньгами. Когда будете готовы, приезжайте на подписание договора.</p>
+                    <h4>Подпишите договор</h4>
+                    <p>И езжайте в ремонт. Или получите выплату наличными, если вы выбрали этот вариант. Дату начала ремонта вы можете самостоятельно согласовать с СТОА. Например, оставить автомобиль в ремонте на время отпуска.</p>
+                </div>
+                <div class="col-sm-4 col-md-5 col-lg-5 left column inthemiddle" style="height: 494px;">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <br>
+                                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
+                                <br>
+                                <br>
+                                <br>
+                                <p>Свяжитесь с нами: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>
+                                <!--a href="viber://forward?text=my_domain.ru+79219304728" class="icon"><img src="src/viber.png" alt="Viberl"></a>
+                            <a href="https://telegram.me/share/url?url=my_domain.ru&amp;text=+79219304728" class="icon"><img src="src/telegram_logo.png" alt="Telegram"></a>
+                            <a href="whatsapp://send?text=my_domain.ru+79219304728" data-action="share/whatsapp/share" class="icon"><img src="src/whatsapp.png" alt="WhatsApp"></a-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="color">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><span>Новый уровень сервиса</span><br>в урегулировании убытков после ДТП</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Бесплатно</h4>
+                            <h3>Никаких затрат</h3>
+                            <p>Наши услуги для вас бесплатны - расходы возместит страховая компания и/или виновник ДТП. В услугу включены работы экспертов, юристов и эвакуатора.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Удобно</h4>
+                            <h3>Удобное расположение</h3>
+                            <p>Наши офисы и представители находятся в разных районах города, вы будете избавлены от долгого ожидания в очередях и неприветливых сотрудников страховых компаний.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Качественно</h4>
+                            <h3>Гарантированное качество</h3>
+                            <p>Эксперты тщательно проверяют автомобили наших клиентов. Используются только современные методы и оборудование.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Быстро</h4>
+                            <h3>Не нужно долго ждать</h3>
+                            <p>После предоставления автомобиля на осмотр, эксперт в течение одного рабочего дня рассчитает размер ущерба и сделает вам предложение по выплате.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Наличие выбора</h4>
+                            <h3>Выбор за вами</h3>
+                            <p>Вы принимаете решение только после предложения всех вариантов возмещения - выплата наличными. Результаты расчетов независимого эксперта будут предоставлены бесплатно.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="block" style="height: 235px;">
+                            <h4>Просто</h4>
+                            <h3>Гибкий подход к вашей проблеме</h3>
+                            <p>В отличии от страховых компаний, мы не требуем лишних справок, подписей и печатей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--div class="white request">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><span>Задать вопрос</span></h2>
+                </div>
+
+            </div>
+        </div-->
+
+        <div class="white">
+            <div class="container">
+                <h2 class="h2 text-center">Свидетельства и сертификаты</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                        <a data-fancybox="gallery" href="src/sert1.jpg">
+                            <img class="img-responsive" src="src/sert1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                        <a data-fancybox="gallery" href="src/sert2.jpg">
+                            <img class="img-responsive" src="src/sert2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                        <a data-fancybox="gallery" href="src/sert3.jpg">
+                            <img class="img-responsive" src="src/sert3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="color companyInFigure">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><strong>Компания в цифрах</strong>
+                    </h2>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row text-center padding_num_comp">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>12 лет</h3>
+                            <p class="h5 companyInFigure_desc">оказываем помощь<br>пострадавшим в ДТП</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>60+</h3>
+                            <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>100 000</h3>
+                            <p class="h5 companyInFigure_desc">довольных клиентов<br>по всей стране</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="white">
+            <div class="container">
+                <h2 class="h2 text-center">Наш адрес</h2>
+                <div class="row">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af384447fcfe6aef571f838e6b1af12dc2f8690992812fd210347c03850675275&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <div class="text-center copyright">«РусЭксперт» © 2011 -
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>. Все права защищены.</div>
+    </footer>
+    <a href="/#top" class="scrollup" style="opacity: 0;"><i class="fa fa-angle-up active"></i></a>
+    <!-- Modal -->
+    <!-- Modal ЗАЯВКА ОБРАТНОЙ СВЯЗИ-->
+    <div class="modal fade" id="mySignup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Оформить заявку</h4>
+                </div>
+                <div class="modal-body"><iframe name="fff" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource.html"></iframe>
+                    <iframe name="ggg" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource(1).html"></iframe>
+                    <div class="answer"></div>
+                    <form target="fff" class="form" action="send_email.php" method="post" enctype="multipart/form-data" onsubmit="">
+                        <input type="hidden" name="action" value="form/view">
+                        <input type="hidden" name="site_id" value="86">
+                        <input type="hidden" name="lang" value="rus">
+                        <input type="hidden" name="form[rus]" value="form-new.txt">
+                        <div class="form-group hidden"><input type="text" name="formdata[product]" value="Заказ обратного звонка" class="string mandatory" placeholder="Выплата по ОСАГО"></div>
+                        <div class="form-group"><input type="text" name="name" value="" class="string mandatory form-control name" placeholder="Ваше имя"></div>
+                        <div class="form-group"><input type="text" name="phone" value="" class="string mandatory form-control phone" placeholder="Контактный телефон"></div>
+                        <input type="submit" name="formdata[element2]" class="btn btn-primary call-to-action" value="Заказать звонок">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/jquery.fancybox.min.js"></script>
+    <!--script src="src/bootstrap.min.js"></script-->
+    <!--link rel="stylesheet" href="src/owl.carousel.css">        
+    <link rel="stylesheet" href="src/owl.theme.css">    
+    <script src="src/owl.carousel.js"></script>    
+    <script async="" src="src/slider.js"></script>
+    <script src="src/1a01607fb5.js"></script>
+    <script src="src/etc.js"></script>
+    
+    <script src="src/jquery.jplayer.min.js"></script-->
+
+
+</body>
+
+</html
