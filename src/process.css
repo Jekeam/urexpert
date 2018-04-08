@@ -1,0 +1,590 @@
+/* RESET */
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+    color: #666666;
+}
+
+
+/* process */
+
+.process {
+    background: url(process.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.process .inside {
+    height: 100%;
+}
+
+.process-content h1 {
+    max-width: 820px;
+}
+
+.process-line {
+    margin-top: 50px;
+}
+
+.process-pagination {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.process-slideCommiter {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    height: 1px;
+    background: #e0e0e0;
+    vertical-align: middle;
+    position: relative;
+}
+
+.process-slideCommiter .fill {
+    background: #ee3054;
+    height: 100%;
+    width: 0;
+}
+
+.process-slidePointer {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    width: 40px;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    background: none;
+    color: #ee3054;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    border-radius: 150px;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.process-slidePointer-happened,
+.process-slidePointer-happened:hover,
+.wl6 .process-slidePointer-happened,
+.wl6 .process-slidePointer-happened:hover {
+    background: #ee3054;
+    color: #fff;
+    border-color: #ee3054;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.process-sliderBody {
+    min-height: 445px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.process-slide {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    width: 840px;
+    display: none;
+    margin: 0 auto;
+}
+
+.process-slide-active {
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.process-sliderBg {
+    background: #fff;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+    min-height: 445px;
+    height: 100%;
+    line-height: 445px;
+}
+
+.process-number {
+    color: #ee3054;
+    font-size: 210px;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+}
+
+.process-text {
+    width: 59%;
+    text-align: center;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.process-proc {
+    z-index: 6;
+    position: relative;
+    background: #ee3054;
+    overflow: hidden;
+}
+
+.process-proc h2 {
+    display: block;
+    text-align: left;
+    max-width: 500px;
+    color: #fff;
+    padding-left: 90px;
+    line-height: 62px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.process-line-type2 {
+    margin-left: 90px;
+}
+
+.process-flag {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    right: 50%;
+    margin-right: -411px;
+    z-index: 5;
+}
+
+.process-begin {
+    position: absolute;
+    top: 50%;
+    height: 1000%;
+    right: 50%;
+    margin-right: -371px;
+    width: 6px;
+    background: #fff;
+    z-index: 4;
+}
+
+.process-intermed {
+    background: url(intermed.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 6;
+    position: relative;
+}
+
+.process-intermed h2 {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+.hg8 .process-line-liketech {
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.h78 .process-line-liketech {
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+.h775 .process-line-liketech {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.h67 .process-line-liketech {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.h665 .process-line-liketech {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.h56 .process-line-liketech {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.h555 .process-line-liketech {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.h45 .process-line-liketech {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.w68 .process-line-liketech {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.wl6 .process-line-liketech {
+    margin-top: 30px;
+    margin-bottom: 0;
+    height: 2px;
+    width: 120px;
+}
+
+.process-cols {
+    padding-top: 80px;
+    position: relative;
+    z-index: 6;
+    background: #f3f3f3;
+}
+
+.process-col {
+    width: 33%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    margin-bottom: 30px;
+}
+
+.process-colInner {
+    padding: 0 20px;
+}
+
+.process-colBg {
+    background: #fff;
+    padding: 45px 20px 35px 20px;
+    text-align: center;
+    min-height: 190px;
+}
+
+.process-colNumber {
+    background: #ee3054;
+    border-radius: 100px;
+    height: 85px;
+    width: 85px;
+    line-height: 90px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    *zoom: 1;
+    *display: inline;
+    margin-bottom: 30px;
+}
+
+.process-colText {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: lighter;
+    color: #666;
+}
+
+.process-col:hover {
+    text-decoration: none;
+}
+
+.process-col:hover .process-colBg {
+    background: #ee3054;
+}
+
+.process-col:hover .process-colNumber {
+    background: #fff;
+    color: #ee3054;
+}
+
+.process-col:hover .process-colText {
+    color: #fff;
+}
+
+.process-figure {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    margin-top: -198px;
+    left: 50%;
+    margin-left: -172px;
+}
+
+.process-slogan {
+    max-width: 910px;
+}
+
+.process-pipes {
+    position: relative;
+    z-index: 6;
+    background: #fff;
+}
+
+.process-pipesBg {
+    background: url(bg.png) repeat-x center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.process-pipe {
+    background: url(mask.png) no-repeat top center;
+    height: 254px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-pipe-last {
+    background: url(mask.png) no-repeat top center;
+    height: 172px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-pipe-inter {
+    background: url(mask2.png) repeat-y top center;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.process-pipeTop {
+    background: url(mask2.png) repeat-y top center;
+    height: 240px;
+    position: relative;
+}
+
+.process-pipeBottom {
+    background: url(mask3.png) repeat-y top center;
+    height: 80px;
+    position: relative;
+}
+
+.w810 .process-pipe,
+.w810 .process-pipe-last {
+    background: url(mask810.png) no-repeat top center;
+}
+
+.w810 .process-pipe-inter,
+.w810 .process-pipeTop {
+    background: url(mask2810.png) repeat-y top center;
+}
+
+.w810 .process-pipeBottom {
+    background: url(mask3810.png) repeat-y top center;
+}
+
+.pipe {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+}
+
+.pipe1 {
+    bottom: 5px;
+    left: 50%;
+    margin-left: 319px;
+    background-position: 0 0;
+}
+
+.pipe1.active {
+    background-position: -108px 0;
+}
+
+.pipe-left {
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -419px;
+}
+
+.pipe-right {
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: 318px;
+}
+
+.w810 .pipe-left {
+    margin-left: -319px;
+}
+
+.w810 .pipe-right,
+.w810 .pipe1 {
+    margin-left: 218px;
+}
+
+.w810 .pipe-text-left {
+    margin-left: -195px;
+}
+
+.w810 .pipe-text-right {
+    margin-left: -150px;
+}
+
+.process-pipe-last .pipe {
+    bottom: 0;
+    top: auto;
+    margin-top: 0;
+    height: 97px;
+}
+
+.pipe2 {
+    background-position: 0 -101px;
+}
+
+.pipe2.active {
+    background-position: -108px -101px;
+}
+
+.pipe3 {
+    background-position: 0 -208px;
+}
+
+.pipe3.active {
+    background-position: -108px -208px;
+}
+
+.pipe4 {
+    background-position: 0 -316px;
+}
+
+.pipe4.active {
+    background-position: -108px -316px;
+}
+
+.pipe5 {
+    background-position: 0 -425px;
+}
+
+.pipe5.active {
+    background-position: -108px -425px;
+}
+
+.pipe6 {
+    background-position: -3px -533px;
+}
+
+.pipe6.active {
+    background-position: -111px -533px;
+}
+
+.pipe7 {
+    background-position: -4px -642px;
+}
+
+.pipe7.active {
+    background-position: -112px -642px;
+}
+
+.pipe8 {
+    background-position: -5px -750px;
+}
+
+.pipe8.active {
+    background-position: -113px -750px;
+}
+
+.pipe9 {
+    background-position: -6px -859px;
+}
+
+.pipe9.active {
+    background-position: -114px -859px;
+}
+
+.pipe10 {
+    background-position: -8px -967px;
+}
+
+.pipe10.active {
+    background-position: -116px -967px;
+}
+
+.pipe11 {
+    background-position: -10px -1073px;
+}
+
+.pipe11.active {
+    background-position: -118px -1073px;
+}
+
+.pipe12 {
+    background-position: -7px -1179px;
+}
+
+.pipe12.active {
+    background-position: -115px -1179px;
+}
+
+.pipe.active {}
+
+.pipe-text {
+    max-width: 350px;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+}
+
+.pipe-text.one-string {
+    margin-top: -10px;
+}
+
+.pipe-text-left {
+    margin-left: -295px;
+}
+
+.pipe-text-right {
+    margin-left: -50px;
+    text-align: right;
+}
+
+.process-pipeTop .pipe-text {
+    margin-top: 30px;
+}
+
+.process-pipe-last .pipe-text {
+    margin-top: 20px;
+}
