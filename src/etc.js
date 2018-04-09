@@ -6,6 +6,7 @@ $(document).ready(function() {
         return false;
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     document.getElementById('feedback-form').addEventListener('submit', function(evt) {
@@ -28,6 +29,8 @@ $(document).ready(function() {
         http.send(new FormData(f));
     }, false);
 >>>>>>> parent of 0335f9c... форма готова
+=======
+>>>>>>> parent of 0846be9... переделаем на телефон потом
 });
 
 $(window).scroll(function() {
@@ -99,21 +102,16 @@ $(document).ready(function(e) {
         var year = $('#yearFF').val();
         var km = $('#kmFF').val();
         var message = $('#messageFF').val();
-        if (message == "") {
-            console.log('Нет пожеланий');
-            $('#messageFF').val('Нет пожеланий');
-        }
+        if (message == "") { console.log('Нет пожеланий');
+            $('#messageFF').val('Нет пожеланий'); }
         if (name.length > 0 && contact.length > 0 && year.length > 0 && km.length > 0) {
             $("#callback-feedback").html("<h2 class='post-message'>Идет отправка сообщения...</h2>");
             $('#feedback-form').submit(function() {
                 $("#callback-feedback").html("<span class='post-success'><h2>Cпасибо за обращение! Заявка отправлена.</h2><p>Специалист свяжется с Вами в ближайщее время!</p></span><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 $('#feedback-form').hide();
             });
-        } else {
-            alert('Заполните все поля формы');
-            event.preventDefault();
-            return false;
-        }
+        } else { alert('Заполните все поля формы');
+            event.preventDefault(); return false; }
     });
 
     /*Новые формы*/
@@ -128,11 +126,8 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else {
-            alert('Заполните все поля формы');
-            event.preventDefault();
-            return false;
-        }
+        } else { alert('Заполните все поля формы');
+            event.preventDefault(); return false; }
     });
 
     $('.product-abstract.cooperation form .btn').click(function(event) {
@@ -146,11 +141,8 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else {
-            alert('Заполните все поля формы');
-            event.preventDefault();
-            return false;
-        }
+        } else { alert('Заполните все поля формы');
+            event.preventDefault(); return false; }
     });
 
 
@@ -166,11 +158,8 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else {
-            alert('Заполните все поля формы');
-            event.preventDefault();
-            return false;
-        }
+        } else { alert('Заполните все поля формы');
+            event.preventDefault(); return false; }
     });
 
     /*Вопрос-ответ*/
@@ -200,11 +189,8 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Скоро мы ответим на ваш вопрос! </h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else {
-            alert('Заполните все поля формы');
-            event.preventDefault();
-            return false;
-        }
+        } else { alert('Заполните все поля формы');
+            event.preventDefault(); return false; }
     });
 
 });
