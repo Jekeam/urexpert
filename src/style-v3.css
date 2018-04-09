@@ -1736,3 +1736,13 @@ body.new .content.index .faq .number {
 .thumb {
     padding: 5px;
 }
+
+
+/*title line*/
+
+.title-line {
+    background-color: red;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 5px;
+}
