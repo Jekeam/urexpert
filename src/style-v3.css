@@ -791,7 +791,7 @@ body.new .content {
 
 @media (max-width:767px) {
     body.new .content {
-        padding-top: 8.5rem;
+        padding-top: 5.5rem;
     }
 }
 

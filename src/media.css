@@ -18,6 +18,12 @@
     .carousel-inner p {
         font-size: 14px;
     }
+    .money24 {
+        margin-top: 40px;
+    }
+    .money24 p {
+        padding-bottom: 15px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -26,5 +32,36 @@
     }
     .carousel-inner p {
         display: none;
+    }
+    .money24 {
+        margin-top: 10px;
+    }
+    .money24 p {
+        padding-bottom: 5px;
+    }
+    .mobile-center {
+        text-align: center;
+    }
+    body.new .content.index .index-screen .image {
+        margin-bottom: 0rem;
+    }
+    .title-line {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 2px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        line-height: 1.3;
     }
 }
