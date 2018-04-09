@@ -28,9 +28,12 @@ $(document).ready(function() {
         }
         http.send(new FormData(f));
     }, false);
+<<<<<<< HEAD
 >>>>>>> parent of 0335f9c... форма готова
 =======
 >>>>>>> parent of 0846be9... переделаем на телефон потом
+=======
+>>>>>>> parent of 0335f9c... форма готова
 });
 
 $(window).scroll(function() {
