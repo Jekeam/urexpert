@@ -7,6 +7,7 @@ $(document).ready(function() {
     });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     document.getElementById('feedback-form').addEventListener('submit', function(evt) {
@@ -34,6 +35,8 @@ $(document).ready(function() {
 >>>>>>> parent of 0846be9... переделаем на телефон потом
 =======
 >>>>>>> parent of 0335f9c... форма готова
+=======
+>>>>>>> parent of 0846be9... переделаем на телефон потом
 });
 
 $(window).scroll(function() {
