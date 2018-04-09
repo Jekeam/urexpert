@@ -5,6 +5,26 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: $(target).offset().top - 70 }, 800);
         return false;
     });
+
+    document.getElementById('feedback-form').addEventListener('submit', function(evt) {
+        var http = new XMLHttpRequest(),
+            f = this;
+        evt.preventDefault();
+        http.open("POST", "contacts.php", true);
+        http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                alert(http.responseText);
+                if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поле сообщения, если в ответе первым словом будет имя отправителя
+                    f.messageFF.removeAttribute('value');
+                    f.messageFF.value = '';
+                }
+            }
+        }
+        http.onerror = function() {
+            alert('Извините, данные не были переданы');
+        }
+        http.send(new FormData(f));
+    }, false);
 });
 
 $(window).scroll(function() {
@@ -76,16 +96,21 @@ $(document).ready(function(e) {
         var year = $('#yearFF').val();
         var km = $('#kmFF').val();
         var message = $('#messageFF').val();
-        if (message == "") { console.log('Нет пожеланий');
-            $('#messageFF').val('Нет пожеланий'); }
+        if (message == "") {
+            console.log('Нет пожеланий');
+            $('#messageFF').val('Нет пожеланий');
+        }
         if (name.length > 0 && contact.length > 0 && year.length > 0 && km.length > 0) {
             $("#callback-feedback").html("<h2 class='post-message'>Идет отправка сообщения...</h2>");
             $('#feedback-form').submit(function() {
                 $("#callback-feedback").html("<span class='post-success'><h2>Cпасибо за обращение! Заявка отправлена.</h2><p>Специалист свяжется с Вами в ближайщее время!</p></span><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 $('#feedback-form').hide();
             });
-        } else { alert('Заполните все поля формы');
-            event.preventDefault(); return false; }
+        } else {
+            alert('Заполните все поля формы');
+            event.preventDefault();
+            return false;
+        }
     });
 
     /*Новые формы*/
@@ -100,8 +125,11 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else { alert('Заполните все поля формы');
-            event.preventDefault(); return false; }
+        } else {
+            alert('Заполните все поля формы');
+            event.preventDefault();
+            return false;
+        }
     });
 
     $('.product-abstract.cooperation form .btn').click(function(event) {
@@ -115,8 +143,11 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else { alert('Заполните все поля формы');
-            event.preventDefault(); return false; }
+        } else {
+            alert('Заполните все поля формы');
+            event.preventDefault();
+            return false;
+        }
     });
 
 
@@ -132,8 +163,11 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Ваша заявка отправлена.</h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else { alert('Заполните все поля формы');
-            event.preventDefault(); return false; }
+        } else {
+            alert('Заполните все поля формы');
+            event.preventDefault();
+            return false;
+        }
     });
 
     /*Вопрос-ответ*/
@@ -163,8 +197,11 @@ $(document).ready(function(e) {
                 abstr.find('.answer').html("<h4>Cпасибо за обращение! Скоро мы ответим на ваш вопрос! </h4><h6>Для повторной отправки обновите страницу (F5)</h6>");
                 tmp.hide();
             });
-        } else { alert('Заполните все поля формы');
-            event.preventDefault(); return false; }
+        } else {
+            alert('Заполните все поля формы');
+            event.preventDefault();
+            return false;
+        }
     });
 
 });
