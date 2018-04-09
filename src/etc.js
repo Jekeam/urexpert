@@ -25,6 +25,9 @@ $(document).ready(function() {
         }
         http.send(new FormData(f));
     }, false);
+
+
+
 });
 
 $(window).scroll(function() {

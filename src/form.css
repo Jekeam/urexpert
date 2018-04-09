@@ -56,23 +56,11 @@
 
 #submitFF {
     /* кнопка "Отправить" */
-    padding: 2%;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2) inset;
-    background: #669acc;
-    color: #fff;
+    width: 80%;
+    font-size: 1.2em;
 }
 
 #feedback-form br {
     height: 0;
     clear: both;
-}
-
-#submitFF:hover {
-    background: #5c90c2;
-}
-
-#submitFF:focus {
-    box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, .8), inset 0 -1px 0 rgba(0, 0, 0, .05);
 }
