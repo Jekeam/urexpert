@@ -120,7 +120,7 @@ body.new h3,
 body.new h4,
 body.new h5,
 body.new h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight: 800;
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -1563,7 +1563,7 @@ body.new .content.index .color .block p {
 body.new .content.index .white,
 body.new .content.index .color,
 body.new .content.index .portfolio {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
 }
 
 body.new .content.index .color {
@@ -1745,4 +1745,12 @@ body.new .content.index .faq .number {
     margin-left: 150px;
     margin-right: 150px;
     padding: 5px;
+}
+
+.money24 {
+    margin-top: 80px;
+}
+
+.money24 p {
+    padding-bottom: 30px;
 }
