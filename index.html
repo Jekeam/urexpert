@@ -21,31 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="src/jquery.fancybox.min.css" rel="stylesheet">
     <link href="src/compiled.min.css" rel="stylesheet">
+    <link href="src/form.css" rel="stylesheet">
 
     <script src="src/jquery.min.js"></script>
     <script src="src/bootstrap.js"></script>
     <script src="src/process.js"></script>
-    <script>
-        document.getElementById('feedback-form').addEventListener('submit', function(evt) {
-            var http = new XMLHttpRequest(),
-                f = this;
-            evt.preventDefault();
-            http.open("POST", "contacts.php", true);
-            http.onreadystatechange = function() {
-                if (http.readyState == 4 && http.status == 200) {
-                    alert(http.responseText);
-                    if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поле сообщения, если в ответе первым словом будет имя отправителя
-                        f.messageFF.removeAttribute('value');
-                        f.messageFF.value = '';
-                    }
-                }
-            }
-            http.onerror = function() {
-                alert('Извините, данные не были переданы');
-            }
-            http.send(new FormData(f));
-        }, false);
-    </script>
+    <script src="src/etc.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -102,8 +83,8 @@
                                 <br> — Предварительная оценка по интернету
                                 <br> — Бесплатная диагностика
                             </p>
-                            <a class="btn btn-primary" data-toggle="modal" data-target="#mySignup">
-                                <i class="fa fa-caret-left" aria-hidden="true"></i> Получить выплату <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <a href="#calc" class="btn btn-primary">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i> Расчитать выплату <i class="fa fa-caret-right" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -230,42 +211,6 @@
             </div>
         </div>
 
-        <!--div class="white">
-            <div class="container">
-                <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 title">
-                    <h2><span>Как воспользоваться нашими услугами?</span></h2>
-                    <p>С проектом «РусЭксперт» процесс выплаты возмещения стал проще и быстрее: получить свои деньги можно за 24 часа.</p>
-                </div>
-                <div class="col-sm-8 col-md-7 col-lg-7 right column">
-                    <h4><a data-target="#mySignup" data-toggle="modal">Оставьте заявку</a></h4>
-                    <p>Вы можете как самостоятельно сфотографировать свой автомобиль и прислать нам фотографии, так и подъехать к нам в офис в удобное для вас время.
-                    </p>
-                    <h4>Примите решение</h4>
-                    <p>Мы не станем настаивать и торопить вас. Примите взвешенное решение - ознакомьтесь с примерами выплат, получить компенсацию ущерба наличными деньгами. Когда будете готовы, приезжайте на подписание договора.</p>
-                    <h4>Подпишите договор</h4>
-                    <p>И езжайте в ремонт. Или получите выплату наличными, если вы выбрали этот вариант. Дату начала ремонта вы можете самостоятельно согласовать с СТОА. Например, оставить автомобиль в ремонте на время отпуска.</p>
-                </div>
-                <div class="col-sm-4 col-md-5 col-lg-5 left column inthemiddle">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                                <br>
-                                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
-                                <br>
-                                <br>
-                                <br>
-                                <p>Свяжитесь с нами: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>
-                                <!- -a href="viber://forward?text=my_domain.ru+79219304728" class="icon"><img src="src/viber.png" alt="Viberl"></a>
-                            <a href="https://telegram.me/share/url?url=my_domain.ru&amp;text=+79219304728" class="icon"><img src="src/telegram_logo.png" alt="Telegram"></a>
-                            <a href="whatsapp://send?text=my_domain.ru+79219304728" data-action="share/whatsapp/share" class="icon"><img src="src/whatsapp.png" alt="WhatsApp"></a- - >
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div-->
-
         <div class="color hidden-xs hidden-sm">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
@@ -384,58 +329,32 @@
 
         <div class="white">
             <div class="container">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 0335f9c... форма готова
-                <div class="col-sm-8 col-md-8 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 title">
+                <div class="col-md-6 col-md-offset-3 title">
                     <h2><span>Бесплатная консультация</span></h2>
-                    <p>Мы перезвоним вам через 5 минут и подробно проконсультируем</p>
+                    <a name="calc"></a>
+                    <div class="title-line"></div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 ">
-
-                    <form enctype="multipart/form-data" method="post" id="feedback-form">
+                    <p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p>
+                    <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center">
+                        <h3 class="text-center">Расчитать выплату</h3>
                         <label for="nameFF">Имя:</label>
                         <input type="text" name="nameFF" id="nameFF" required placeholder="например, Иван Иванович Иванов" x-autocompletetype="name" class="w100 border">
-                        <label for="contactFF">Email:</label>
-                        <input type="email" name="contactFF" id="contactFF" required placeholder="например, ivan@yandex.ru" x-autocompletetype="email" class="w100 border">
-                        <label for="fileFF">Прикрепить файлы:</label>
+                        <label for="contactFF">Телефон:</label>
+                        <input type="text" name="contactFF" id="contactFF" required placeholder="например, 9221230011" x-autocompletetype="email" class="w100 border">
+                        <label for="fileFF">Фото:</label>
                         <input type="file" name="fileFF[]" multiple id="fileFF" class="w100">
                         <label for="messageFF">Сообщение:</label>
                         <textarea name="messageFF" id="messageFF" rows="5" placeholder="Детали заявки…" class="w100 border"></textarea>
                         <br>
-                        <input value="Отправить" type="submit" id="submitFF">
+                        <input value="Отправить" type="submit" id="submitFF" class="btn btn-primary">
                     </form>
-
-                </div>
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                                <br>
-                                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
-                                <br>
-                                <br>
-                                <br>
-                                <p>Свяжитесь с нами: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>
-                                <!--a href="viber://forward?text=my_domain.ru+79219304728" class="icon"><img src="src/viber.png" alt="Viberl"></a>
-                                <a href="https://telegram.me/share/url?url=my_domain.ru&amp;text=+79219304728" class="icon"><img src="src/telegram_logo.png" alt="Telegram"></a>
-                                <a href="whatsapp://send?text=my_domain.ru+79219304728" data-action="share/whatsapp/share" class="icon"><img src="src/whatsapp.png" alt="WhatsApp"></a-->
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
 
         <div class="white">
             <div class="container">
-=======
->>>>>>> parent of 0846be9... переделаем на телефон потом
-=======
->>>>>>> parent of 0846be9... переделаем на телефон потом
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2><strong>Наш адрес</strong>
                     </h2>
@@ -447,6 +366,8 @@
                     </div>
                 </div>
             </div>
+
+        </div>
         </div>
 
 
@@ -489,6 +410,7 @@
                 </div>
                 <!--/First column-->
             </div>
+            <p class="text-center">E-mail: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>
             <!--/First row-->
         </div>
         <!--/Footer Links-->
@@ -498,12 +420,12 @@
             «РусЭксперт» © 2011 -
             <script type="text/javascript">
                 document.write(new Date().getFullYear());
-            </script>. Все права защищены.</div>
+            </script>. Все права защищены.
+        </div>
         </div>
 
     </footer>
     <!--/Footer-->
-
 
 
 
