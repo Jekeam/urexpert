@@ -16,7 +16,7 @@
 #feedback-form .w100 {
     /* поля */
     float: right;
-    max-width: 400px;
+    /*max-width: 400px;*/
     width: 97%;
     margin-bottom: 1em;
     padding: 1.5%;

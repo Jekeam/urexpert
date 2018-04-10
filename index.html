@@ -15,18 +15,25 @@
     <link href="src/bootstrap.css" rel="stylesheet">
     <link href="src/style-v3.css" rel="stylesheet">
     <link href="src/process.css" rel="stylesheet">
+
     <!--link href="src/jplayer.blue.monday.css" rel="stylesheet"-->
     <!--link href="src/1a01607fb5.css" media="all" rel="stylesheet"-->
     <link rel="stylesheet" href="src/media.css" media="all and (max-width: 900px)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="src/jquery.fancybox.min.css" rel="stylesheet">
     <link href="src/compiled.min.css" rel="stylesheet">
     <link href="src/form.css" rel="stylesheet">
 
+
     <script src="src/jquery.min.js"></script>
-    <script src="src/bootstrap.js"></script>
+
+    <link href="src/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="src/jquery.fancybox.min.js"></script>
+
+    <script src="src/owl.carousel.js"></script>
+    <script src="src/bootstrap.min.js"></script>
     <script src="src/process.js"></script>
     <script src="src/etc.js"></script>
+    <script src="src/slider.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -319,7 +326,7 @@
                             <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>100 000+</h3>
+                            <h3>12 961+</h3>
                             <p class="h5 companyInFigure_desc">довольных клиентов<br>по всей стране</p>
                         </div>
                     </div>
@@ -330,22 +337,23 @@
         <div class="white">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
-                    <h2><span>Бесплатная консультация</span></h2>
+                    <h2><span>Расчитать выплату</span></h2>
                     <a name="calc"></a>
                     <div class="title-line"></div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 ">
-                    <p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p>
+                    <!--p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p-->
                     <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center">
-                        <h3 class="text-center">Расчитать выплату</h3>
-                        <label for="nameFF">Имя:</label>
-                        <input type="text" name="nameFF" id="nameFF" required placeholder="например, Иван Иванович Иванов" x-autocompletetype="name" class="w100 border">
-                        <label for="contactFF">Телефон:</label>
-                        <input type="text" name="contactFF" id="contactFF" required placeholder="например, 9221230011" x-autocompletetype="email" class="w100 border">
-                        <label for="fileFF">Фото:</label>
+                        <!--h3 class="text-center">Расчитать выплату</h3-->
+                        <p class="text-center"><strong>Мы перезвоним вам через 5 минут</strong></p>
+                        <!--label for="nameFF">Имя:</label-->
+                        <input type="text" name="nameFF" id="nameFF" required placeholder="Имя, например: Иван Иванович Иванов" x-autocompletetype="name" class="w100 border">
+                        <!--label for="contactFF">Телефон:</label-->
+                        <input type="text" name="contactFF" id="contactFF" required placeholder="Телефон, например: 9221230011" x-autocompletetype="tel" class="w100 border">
+                        <!--label for="fileFF">Фото:</label-->
                         <input type="file" name="fileFF[]" multiple id="fileFF" class="w100">
-                        <label for="messageFF">Сообщение:</label>
-                        <textarea name="messageFF" id="messageFF" rows="5" placeholder="Детали заявки…" class="w100 border"></textarea>
+                        <!--label for="messageFF">Сообщение:</label-->
+                        <textarea name="messageFF" id="messageFF" rows="5" placeholder="Сообщение" class="w100 border"></textarea>
                         <br>
                         <input value="Отправить" type="submit" id="submitFF" class="btn btn-primary">
                     </form>
@@ -356,7 +364,7 @@
         <div class="white">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
-                    <h2><strong>Наш адрес</strong>
+                    <h2><strong>Наш адрес в Уфе</strong>
                     </h2>
                     <div class="title-line"></div>
                 </div>
@@ -456,8 +464,6 @@
             </div>
         </div>
     </div>
-
-    <script src="src/jquery.fancybox.min.js"></script>
 
 
 </body>

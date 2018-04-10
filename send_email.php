@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //проверяем, существуют ли переменные в массиве POST
 echo $_POST['name'];
 echo $_POST['phone'];
@@ -13,7 +13,7 @@ if(isset($_POST['name']) and isset($_POST['phone'])){
     $fio = trim($fio);
     $tel = trim($tel);
 
-    if (mail("suinegne@gmail.com", "Заявка с сайта", "Имя:".$fio.". тел: ".$tel ,"From: suineg@inbox.ru \r\n")){        
+    if (mail("suinegne@gmail.com", "Заявка с сайта", "Имя:".$fio.". тел: ".$tel ,"From: suinegne@gmail.com \r\n")){        
         echo "Сообщение успешно отправлено"; 
     } else { 
         echo "При отправке сообщения возникли ошибки";
