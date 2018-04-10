@@ -20,20 +20,16 @@
     <!--link href="src/1a01607fb5.css" media="all" rel="stylesheet"-->
     <link rel="stylesheet" href="src/media.css" media="all and (max-width: 900px)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/jquery.fancybox.min.css" rel="stylesheet">
     <link href="src/compiled.min.css" rel="stylesheet">
     <link href="src/form.css" rel="stylesheet">
 
 
     <script src="src/jquery.min.js"></script>
+    <script src="src/bootstrap.js"></script>
 
-    <link href="src/jquery.fancybox.min.css" rel="stylesheet">
-    <script src="src/jquery.fancybox.min.js"></script>
-
-    <script src="src/owl.carousel.js"></script>
-    <script src="src/bootstrap.min.js"></script>
     <script src="src/process.js"></script>
     <script src="src/etc.js"></script>
-    <script src="src/slider.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -41,7 +37,7 @@
 <body class="new">
     <header class="affix-top">
         <div class="container inthemiddle">
-            <div class="brand col-xs-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="brand hidden-xs col-sm-4 col-md-4 col-lg-4">
                 <a class="navbar-brand" href="/">
                     <img src="src/ppologo.png" alt="Компания РусЭксперт">
                 </a>
@@ -59,9 +55,9 @@
                 <p class="contact-text">
                     Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-5 action">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 action">
                 <!--a class="btn btn-primary hidden-xs" href="/consultasia">Оставить заявку</a-->
-                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
+                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Бесплатная консультация</a>
             </div>
             <!--div class="col-xs-4 col-sm-6 col-md-1 col-lg-1 menu">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -115,11 +111,12 @@
             </div>
         </div>
 
+        <!--Выплата за 3 шага-->
         <div class="hidden-xs hidden-sm">
             <div class="portfolio color">
                 <div class="container">
                     <div class="col-md-6 col-md-offset-3 title">
-                        <h2><span>Как мы работаем</span></h2>
+                        <h2><span>3 шага до выплаты</span></h2>
                         <div class="title-line"></div>
                     </div>
                     <div class="inside hidden-md hidden-lg">
@@ -158,8 +155,46 @@
             </div>
         </div>
 
+        <!--Компания в цифрах-->
+        <div class="color companyInFigure">
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3 title">
+                    <h2><strong>Компания в цифрах</strong>
+                    </h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row text-center padding_num_comp">
 
-        <div class="portfolio color">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>
+                                <div id="years"></div>
+                            </h3>
+                            <p class="h5 companyInFigure_desc">оказываем помощь<br>пострадавшим в ДТП</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>
+                                <div id="employees"></div>
+                            </h3>
+                            <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <h3>
+                                <div style="display: inline-flex;">
+                                    <div id="clients1"></div>&nbsp;
+                                    <div id="clients2"></div>
+                                </div>
+                            </h3>
+                            <p class="h5 companyInFigure_desc">клиентов<br>по всей стране</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Примеры выплат-->
+        <div class="portfolio white">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2><span>Уже получили деньги</span></h2>
@@ -218,71 +253,8 @@
             </div>
         </div>
 
-        <div class="color hidden-xs hidden-sm">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-3 title">
-                    <h2><span>Новый уровень сервиса</span><br>в урегулировании убытков после ДТП</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Бесплатно</h4>
-                            <h3>Никаких затрат</h3>
-                            <p>Наши услуги для вас бесплатны - расходы возместит страховая компания и/или виновник ДТП. В услугу включены работы экспертов, юристов и эвакуатора.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Удобно</h4>
-                            <h3>Удобное расположение</h3>
-                            <p>Наши офисы и представители находятся в разных районах города, вы будете избавлены от долгого ожидания в очередях и неприветливых сотрудников страховых компаний.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Качественно</h4>
-                            <h3>Гарантированное качество</h3>
-                            <p>Эксперты тщательно проверяют автомобили наших клиентов. Используются только современные методы и оборудование.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Быстро</h4>
-                            <h3>Не нужно долго ждать</h3>
-                            <p>После предоставления автомобиля на осмотр, эксперт в течение одного рабочего дня рассчитает размер ущерба и сделает вам предложение по выплате.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Наличие выбора</h4>
-                            <h3>Выбор за вами</h3>
-                            <p>Вы принимаете решение только после предложения всех вариантов возмещения - выплата наличными. Результаты расчетов независимого эксперта будут предоставлены бесплатно.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="block" style="height: 235px;">
-                            <h4>Просто</h4>
-                            <h3>Гибкий подход к вашей проблеме</h3>
-                            <p>В отличии от страховых компаний, мы не требуем лишних справок, подписей и печатей.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--div class="white request">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-3 title">
-                    <h2><span>Задать вопрос</span></h2>
-                </div>
-
-            </div>
-        </div-->
-
-        <div class="white">
+        <!--Документы-->
+        <div class="color">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2><span>Документы</span></h2>
@@ -303,32 +275,6 @@
                         <a data-fancybox="gallery" href="src/sert3.jpg">
                             <img class="img-responsive" src="src/sert3.jpg" alt="">
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="color companyInFigure">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-3 title">
-                    <h2><strong>Компания в цифрах</strong>
-                    </h2>
-                    <div class="title-line"></div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="row text-center padding_num_comp">
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>12 лет</h3>
-                            <p class="h5 companyInFigure_desc">оказываем помощь<br>пострадавшим в ДТП</p>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>60+</h3>
-                            <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>12 961+</h3>
-                            <p class="h5 companyInFigure_desc">довольных клиентов<br>по всей стране</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -467,5 +413,7 @@
 
 
 </body>
+
+<script src="src/jquery.fancybox.min.js"></script>
 
 </html

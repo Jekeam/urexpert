@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $('a[href^="#"]').click(function() {
+    /*$('a[href^="#"]').click(function() {
         //Сохраняем значение атрибута href в переменной:
         var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top - 70 }, 800);
         return false;
-    });
+    });*/
 
     //новая форма с файлом
     document.getElementById('feedback-form').addEventListener('submit', function(evt) {
