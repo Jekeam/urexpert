@@ -9,11 +9,52 @@
 }
 
 @media all and (max-width: 768px) {
+    .pipe {
+        position: static;
+        text-align: center;
+    }
+    .pipe_p {
+        padding-top: 20px;
+    }
+    .pipe1 {
+        padding: 0;
+        margin-top: 5px;
+        position: static;
+        text-align: center;
+        margin-left: 40%;
+    }
+    .step1 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .pipe8 {
+        padding: 0;
+        margin-top: 5px;
+        position: static;
+        margin-left: 40%;
+    }
+    .step2 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .pipe11 {
+        padding: 0;
+        margin-top: 5px;
+        position: static;
+        margin-left: 40%;
+    }
+    .step3 {
+        text-align: center;
+    }
+    #submitFF {
+        width: 100% !important;
+    }
     .carousel-caption {
         bottom: 10%;
     }
     .carousel-inner h3 {
         font-size: 18px;
+        padding-bottom: 1.5em;
     }
     .carousel-inner p {
         font-size: 14px;
@@ -22,11 +63,18 @@
         margin-top: 40px;
     }
     .money24 p {
-        padding-bottom: 15px;
+        padding-bottom: 0px;
+    }
+    .p_tags {
+        text-align: center;
+        padding-left: 0;
     }
 }
 
 @media all and (max-width: 600px) {
+    #submitFF {
+        width: 100%;
+    }
     .carousel-inner h3 {
         animation: anim-H3 2s ease-out;
     }
@@ -35,9 +83,10 @@
     }
     .money24 {
         margin-top: 10px;
+        padding-bottom: 1em;
     }
     .money24 p {
-        padding-bottom: 5px;
+        padding-bottom: 0px;
     }
     .mobile-center {
         text-align: center;

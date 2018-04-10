@@ -37,12 +37,12 @@
 <body class="new">
     <header class="affix-top">
         <div class="container inthemiddle">
-            <div class="brand hidden-xs col-sm-4 col-md-4 col-lg-4">
+            <div class="brand hidden-xs col-sm-5 col-md-3 col-lg-3">
                 <a class="navbar-brand" href="/">
                     <img src="src/ppologo.png" alt="Компания РусЭксперт">
                 </a>
             </div>
-            <div class="col-xs-6 hidden-sm col-md-6 col-lg-6 adress hidden-xs">
+            <div class="col-md-5 col-lg-5 adress hidden-xs hidden-sm">
                 <a id="drop" href="/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                     <span class="contact-city">Головной офис (Уфа)</span> <span class="caret"></span>
                 </a>
@@ -55,7 +55,7 @@
                 <p class="contact-text">
                     Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 action">
+            <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 action">
                 <!--a class="btn btn-primary hidden-xs" href="/consultasia">Оставить заявку</a-->
                 <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Бесплатная консультация</a>
             </div>
@@ -77,83 +77,99 @@
                 <p class="h2 text-center">легальное возмещение ущерба в полном объеме</p>
                 <!--h1 class="text-center"><strong>Получите страховое возмещение после ДТП по ОСАГО или КАСКО</strong>
                     <p class="h2 text-center">через 24 часа после нашей бесплатной экспресс-оценки</p-->
-                <div class="image">
-                    <div class="row money24">
-                        <div class="col-sm-7 col-md-7 col-lg-7 text-right"></div>
-                        <div class="col-sm-4 col-md-5 col-lg-5 text-left mobile-center">
-                            <h2><a data-toggle="modal" data-target="#mySignup">Деньги через 24 часа</a></h2>
+                <div class="row money24">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mobile-center text-center">
+                        <!--p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p-->
+                        <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center">
+                            <!--h3 class="text-center">Расчитать выплату</h3-->
+                            <p class="text-center"><strong>Загрузите фото и узнайте сумму через 15 минут</strong></p>
+                            <!--label for="nameFF">Имя:</label-->
+                            <input type="text" name="nameFF" id="nameFF" required placeholder="Имя, например: Иван Иванович" x-autocompletetype="name" class="w100 border">
+                            <!--label for="contactFF">Телефон:</label-->
+                            <input type="text" name="contactFF" id="contactFF" required placeholder="Телефон, например: 9221230011" x-autocompletetype="tel" class="w100 border">
+                            <!--label for="fileFF">Фото:</label-->
+                            <input type="file" name="fileFF[]" multiple id="fileFF" class="w100">
+                            <!--label for="messageFF">Сообщение:</label-->
+                            <!--textarea name="messageFF" id="messageFF" rows="5" placeholder="Сообщение" class="w100 border"></textarea-->
+                            <br>
+                            <input value="Расчитать выплату" type="submit" id="submitFF" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 text-center">
+                        <h2><a data-toggle="modal" data-target="#mySignup">Деньги через 24 часа</a></h2>
+                        <div class="p_tags">
                             <p>— Выплата без обращений в страховую
                                 <br> — Предварительная оценка по интернету
                                 <br> — Бесплатная диагностика
                             </p>
-                            <a href="#calc" class="btn btn-primary">
-                                <i class="fa fa-caret-left" aria-hidden="true"></i> Расчитать выплату <i class="fa fa-caret-right" aria-hidden="true"></i>
-                            </a>
                         </div>
                     </div>
-                    <!--div class="row">
-                        <div class="col-sm-7 col-md-7 col-lg-7 text-right"></div>
-                        <div class="col-sm-4 col-md-5 col-lg-5 text-left">
-                            <p>
-                                <h2><a data-toggle="modal" data-target="#mySignup">Страховая не платит или<br>Выплатили мало?</a></h2>
-                                <p>— Взыскать 100% ущерб со страховой
-                                    <br> — Бесплатная диагностика
-                                    <br> — Быстрое оформление
-                                </p>
-                                <a class="btn btn-gray" data-toggle="modal" data-target="#mySignup">
-                                    <i class="fa fa-caret-left" aria-hidden="true"></i> Взыскать ущерб в полном объеме <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div-->
-                    <p class="text-center"><strong></strong></p>
                 </div>
             </div>
         </div>
 
         <!--Выплата за 3 шага-->
-        <div class="hidden-xs hidden-sm">
+        <div class="hidden-xs">
             <div class="portfolio color">
                 <div class="container">
                     <div class="col-md-6 col-md-offset-3 title">
                         <h2><span>3 шага до выплаты</span></h2>
                         <div class="title-line"></div>
                     </div>
-                    <div class="inside hidden-md hidden-lg">
-                        123
-                    </div>
                 </div>
             </div>
-            <div class="inside hidden-xs hidden-sm">
+            <div class="inside hidden-xs">
                 <div class="process-pipesBg process-limit" data-session="1">
-                    <div class="process-pipeTop process-limit-pointer">
-                        <div class="pipe pipe1"></div>
-                        <div class="pipe-text pipe-text-right">Клиент выходит с нами на связь, через сайт или по телефону</div>
-                    </div>
                     <div class="process-pipe process-limit-pointer">
-                        <div class="pipe pipe-left pipe7"></div>
-                        <div class="pipe-text pipe-text-left">Мы отцениваем предварительную сумму ущерба по фотографиям</div>
+                        <div class="pipe pipe-left pipe1"></div>
+                        <div class="pipe-text pipe-text-left">Оставьте заявку</div>
                     </div>
                     <div class="process-pipe-inter process-limit-pointer">
                         <div class="pipe pipe-right pipe8"></div>
-                        <div class="pipe-text pipe-text-right">Делаем собственную экспертизу бесплатно и точно оцениваем ущерб</div>
-                    </div>
-                    <div class="process-pipe process-limit-pointer">
-                        <div class="pipe pipe-left pipe2"></div>
-                        <div class="pipe-text pipe-text-left">Заключаем договор, если нужно ведем дело с СК самостоятельно</div>
-                    </div>
-                    <div class="process-pipe-inter process-limit-pointer">
-                        <div class="pipe pipe-right pipe10"></div>
-                        <div class="pipe-text pipe-text-right">Подписываем договор по выплате</div>
+                        <div class="pipe-text pipe-text-right">Мы оценим ущерб</div>
                     </div>
                     <div class="process-pipe-last process-limit-pointer">
                         <div class="pipe pipe-left pipe11"></div>
-                        <div class="pipe-text pipe-text-left">Производим выплату</div>
+                        <div class="pipe-text pipe-text-left">Произведем выплату за 24 часа</div>
                     </div>
                     <div class="process-pipeBottom"></div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <!--Выплата за 3 шага моб-->
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                <div class="portfolio color">
+                    <div class="container">
+                        <div class="col-md-6 col-md-offset-3 title">
+                            <h2><span>3 шага до выплаты</span></h2>
+                            <div class="title-line"></div>
+                        </div>
+                        <div style="background-color: white; padding:15px;">
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 step1">
+                                    <div class="pipe pipe1"></div>
+                                    <p class="pipe_p">Оставьте заявку</p>
+                                </div>
+
+                                <div class="col-sm-12 col-xs-12 step2">
+                                    <div class="pipe pipe8"></div>
+                                    <p class="pipe_p">Мы оценим ущерб</p>
+                                </div>
+
+                                <div class="col-sm-12 col-xs-12 step3">
+                                    <div class="pipe pipe11"></div>
+                                    <p class="pipe_p">Произведем выплату за 24 часа</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <!--Компания в цифрах-->
         <div class="color companyInFigure">
@@ -163,30 +179,27 @@
                     </h2>
                     <div class="title-line"></div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="row text-center padding_num_comp">
-
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>
-                                <div id="years"></div>
-                            </h3>
-                            <p class="h5 companyInFigure_desc">оказываем помощь<br>пострадавшим в ДТП</p>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>
-                                <div id="employees"></div>
-                            </h3>
-                            <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <h3>
-                                <div style="display: inline-flex;">
-                                    <div id="clients1"></div>&nbsp;
-                                    <div id="clients2"></div>
-                                </div>
-                            </h3>
-                            <p class="h5 companyInFigure_desc">клиентов<br>по всей стране</p>
-                        </div>
+                <div class="row text-center padding_num_comp">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>
+                            <div id="years"></div>
+                        </h3>
+                        <p class="h5 companyInFigure_desc">оказываем помощь<br>пострадавшим в ДТП</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>
+                            <div id="employees"></div>
+                        </h3>
+                        <p class="h5 companyInFigure_desc">сотрудников<br>компании</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>
+                            <div style="display: inline-flex;">
+                                <div id="clients1"></div>&nbsp;
+                                <div id="clients2"></div>
+                            </div>
+                        </h3>
+                        <p class="h5 companyInFigure_desc">клиентов<br>по всей стране</p>
                     </div>
                 </div>
             </div>
@@ -261,48 +274,21 @@
                     <div class="title-line"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 thumb">
                         <a data-fancybox="gallery" href="src/sert1.jpg">
                             <img class="img-responsive" src="src/sert1.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 thumb">
                         <a data-fancybox="gallery" href="src/sert2.jpg">
                             <img class="img-responsive" src="src/sert2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 thumb">
                         <a data-fancybox="gallery" href="src/sert3.jpg">
                             <img class="img-responsive" src="src/sert3.jpg" alt="">
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="white">
-            <div class="container">
-                <div class="col-md-6 col-md-offset-3 title">
-                    <h2><span>Расчитать выплату</span></h2>
-                    <a name="calc"></a>
-                    <div class="title-line"></div>
-                </div>
-                <div class="col-md-6 col-md-offset-3 ">
-                    <!--p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p-->
-                    <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center">
-                        <!--h3 class="text-center">Расчитать выплату</h3-->
-                        <p class="text-center"><strong>Мы перезвоним вам через 5 минут</strong></p>
-                        <!--label for="nameFF">Имя:</label-->
-                        <input type="text" name="nameFF" id="nameFF" required placeholder="Имя, например: Иван Иванович Иванов" x-autocompletetype="name" class="w100 border">
-                        <!--label for="contactFF">Телефон:</label-->
-                        <input type="text" name="contactFF" id="contactFF" required placeholder="Телефон, например: 9221230011" x-autocompletetype="tel" class="w100 border">
-                        <!--label for="fileFF">Фото:</label-->
-                        <input type="file" name="fileFF[]" multiple id="fileFF" class="w100">
-                        <!--label for="messageFF">Сообщение:</label-->
-                        <textarea name="messageFF" id="messageFF" rows="5" placeholder="Сообщение" class="w100 border"></textarea>
-                        <br>
-                        <input value="Отправить" type="submit" id="submitFF" class="btn btn-primary">
-                    </form>
                 </div>
             </div>
         </div>
@@ -327,14 +313,6 @@
 
 
     </section>
-
-    <!--footer>
-        <div class="text-center copyright">«РусЭксперт» © 2011 -
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script>. Все права защищены.</div>
-    </footer-->
-
     <!--Footer-->
     <footer class="page-footer font-small myRed pt-0">
 
@@ -391,7 +369,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title" id="myModalLabel">Оформить заявку</h4>
+                    <h4 class="modal-title" id="myModalLabel">Консультация эксперта</h4>
                 </div>
                 <div class="modal-body"><iframe name="fff" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource.html"></iframe>
                     <iframe name="ggg" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource(1).html"></iframe>
@@ -404,7 +382,7 @@
                         <div class="form-group hidden"><input type="text" name="formdata[product]" value="Заказ обратного звонка" class="string mandatory" placeholder="Выплата по ОСАГО"></div>
                         <div class="form-group"><input type="text" name="name" value="" class="string mandatory form-control name" placeholder="Ваше имя"></div>
                         <div class="form-group"><input type="text" name="phone" value="" class="string mandatory form-control phone" placeholder="Контактный телефон"></div>
-                        <input type="submit" name="formdata[element2]" class="btn btn-primary call-to-action" value="Заказать звонок">
+                        <input type="submit" name="formdata[element2]" class="btn btn-primary call-to-action" value="Отправить">
                     </form>
                 </div>
             </div>
