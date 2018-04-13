@@ -15,10 +15,10 @@ $(document).ready(function() {
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
                 alert(http.responseText);
-                if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поле сообщения, если в ответе первым словом будет имя отправителя
-                    f.messageFF.removeAttribute('value');
-                    f.messageFF.value = '';
-                }
+                //if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поле сообщения, если в ответе первым словом будет имя отправителя
+                //f.messageFF.removeAttribute('value');
+                //f.messageFF.value = '';
+                //}
             }
         }
         http.onerror = function() {
