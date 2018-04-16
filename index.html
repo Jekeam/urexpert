@@ -50,7 +50,14 @@
 
     <script src="src/process.js"></script>
     <script src="src/etc.js"></script>
+    <script type="text/javascript" src="src/jquery.quovolver.js"></script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('blockquote').quovolver();
+        });
+    </script>
 
 </head>
 
@@ -67,25 +74,25 @@
                 </a>
             </div>
             <div class="col-md-5 col-lg-5 adress hidden-xs hidden-sm">
-                <a id="drop" href="/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                <!--a id="drop" href="/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                     <span class="contact-city">Головной офис (Уфа)</span> <span class="caret"></span>
-                </a>
+                </a-->
                 <!--ul id="header-contact" class="contact-list dropdown-menu" role="menu" aria-labelledby="drop">
                     <li alt="г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21, тел:8(347)293-40-06;">Головной офис (Уфа)</li>
                     <li alt="(992) 003-9328; ул. Горького, 39, оф. 101">Екатеринбург</li>
                     <li alt="(3452) 60-995; ул. Володарского, 22">Тюмень</li>
                 </ul-->
-                <p class="contact-text">г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21</p>
+                <!--p class="contact-text">г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21</p-->
                 <!--p class="contact-text">
                     Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p-->
-                <p class="contact-text">
+                <!--p class="contact-text">
                     тел:
                     <a href="tel:+7 982 370 30 90">+7 982 370 30 90</a>
-                </p>
+                </p-->
             </div>
             <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 action">
                 <!--a class="btn btn-primary hidden-xs" href="/consultasia">Оставить заявку</a-->
-                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Бесплатная консультация</a>
+                <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySignup">Заказать звонок</a>
             </div>
             <!--div class="col-xs-4 col-sm-6 col-md-1 col-lg-1 menu">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -102,8 +109,52 @@
     <section class="content index">
         <div class="index-screen">
             <div class="container">
-                <h1 class="text-center"><strong>Выплаты по ОСАГО и КАСКО сразу после ДТП</strong></h1>
-                <p class="h2 text-center">легальное возмещение ущерба в полном объеме</p>
+                <h1 class="text-center"><strong>Получите бесплатную консультация автоюриста</strong></h1>
+
+                <div id="article">
+                    <div id="quote_wrap">
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Возмещаем ущерб от ДТП за 1 день</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Выкупаем долги страховых компаний по КАСКО и ОСАГО</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Быстро оцениваем реальный ущерб от ДТП</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Обжалуем любые отказы в выплате страховки</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Проводим честную экспертизу обстоятельств ДТП</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Эффективно работаем по спорам о вине в ДТП</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Эффективно разрешаем любые автопроблемы</font>
+                            </p>
+                        </blockquote>
+                        <blockquote style="display: none;">
+                            <p class="h2 text-center">
+                                <font>Считаем честный максимум по КАСКО и ОСАГО</font>
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
                 <!--h1 class="text-center"><strong>Получите страховое возмещение после ДТП по ОСАГО или КАСКО</strong>
                     <p class="h2 text-center">через 24 часа после нашей бесплатной экспресс-оценки</p-->
                 <div class="row money24">
@@ -111,7 +162,7 @@
                         <!--p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p-->
                         <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center" onsubmit="yaCounter48446306.reachGoal('CLICK_CALC');fbq('track', 'Lead');">
                             <!--h3 class="text-center">Расчитать выплату</h3-->
-                            <p class="text-center" style="color:#DC271E;"><strong>Загрузите фото и узнайте сумму выплаты через 15 минут</strong></p>
+                            <p class="text-center" style="color:#DC271E;"><strong>Если загрузите фото мы скажем вам сумму выплаты через 15 минут</strong></p>
                             <!--label for="nameFF">Имя:</label-->
                             <input type="text" name="nameFF" id="nameFF" required placeholder="Имя, например: Иван Иванович" x-autocompletetype="name" class="w100 border">
                             <!--label for="contactFF">Телефон:</label-->
@@ -121,15 +172,16 @@
                             <!--label for="messageFF">Сообщение:</label-->
                             <!--textarea name="messageFF" id="messageFF" rows="5" placeholder="Сообщение" class="w100 border"></textarea-->
                             <br>
-                            <input value="Расчитать выплату" type="submit" id="submitFF" class="btn btn-primary">
+                            <input value="Бесплатная консультация" type="submit" id="submitFF" class="btn btn-primary">
                         </form>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 text-center">
-                        <h2><a data-toggle="modal" data-target="#mySignup">Деньги через 24 часа</a></h2>
+                        <h2><a data-toggle="modal" data-target="#mySignup">Мы подскажем как</a></h2>
                         <div class="p_tags">
-                            <p>— Выплата без обращений в страховую
-                                <br> — Предварительная оценка по интернету
-                                <br> — Бесплатная диагностика
+                            <p> — Возместить ущерб от ДТП за 24 часа
+                                <br>— Как получить 100% выплату по ОСАГО или КАСКО
+                                <br> — Оценим ущерб по интернету
+                                <br> — Проведем бесплатную диагностику
                             </p>
                         </div>
                     </div>
@@ -322,7 +374,7 @@
             </div>
         </div>
 
-        <div class="white">
+        <!--div class="white">
             <div class="container">
                 <div class="col-md-6 col-md-offset-3 title">
                     <h2><strong>Наш адрес в Уфе</strong>
@@ -336,26 +388,18 @@
                 </div>
             </div>
 
-        </div>
-        </div>
+        </div-->
 
 
 
     </section>
     <!--Footer-->
     <footer class="page-footer font-small myRed pt-0">
-
-        <!--Footer Links-->
-        <div class="footer_container">
-
-            <!--First row-->
-            <div class="footer_row">
-
-                <!--First column-->
+        <!--div class="footer_container">            
+            <!- -div class="footer_row">                
                 <div class="col-md-12 py-5">
-
                     <div class="mb-5 flex-center">
-                        <!--a>
+                        <!- -a>
                             <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
                         </a>
                         <a>
@@ -363,20 +407,16 @@
                         </a>
                         <a>
                             <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
-                        </a-->
+                        </a- ->
                         <a href="https://goo.gl/7NRwk2" target="blank_">
                             <i class="fa fa-vk fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
                         </a>
                     </div>
                 </div>
-                <!--/First column-->
             </div>
-            <p class="text-center">E-mail: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>
-            <!--/First row-->
-        </div>
-        <!--/Footer Links-->
+            <p class="text-center">E-mail: <a href="mailto:suinegne@gmail.com" class="contact">urexpert-ufa@yandex.ru</a></p>            
+        </div-->
 
-        <!--Copyright-->
         <div class="footer-copyright py-3 text-center">
             <a href="/politica.html" target="blank_">Политика конфиденциальности персональных данных</a><br> «РусЭксперт» © 2011 -
             <script type="text/javascript">
