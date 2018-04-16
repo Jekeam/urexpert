@@ -50,7 +50,7 @@
 
     <script src="src/process.js"></script>
     <script src="src/etc.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 </head>
 
@@ -76,8 +76,12 @@
                     <li alt="(3452) 60-995; ул. Володарского, 22">Тюмень</li>
                 </ul-->
                 <p class="contact-text">г. Уфа, ул. Лесотехникума, дом 16, корпус 1, оф. 21</p>
+                <!--p class="contact-text">
+                    Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p-->
                 <p class="contact-text">
-                    Единый номер: <a href="tel:+78005557657">8(800)555-76-57</a>, тел: <a href="tel:+73472934006">8(347)293-40-06</a></p>
+                    тел:
+                    <a href="tel:+7 982 370 30 90">+7 982 370 30 90</a>
+                </p>
             </div>
             <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 action">
                 <!--a class="btn btn-primary hidden-xs" href="/consultasia">Оставить заявку</a-->
@@ -94,6 +98,7 @@
             </div-->
         </div>
     </header>
+    <a name="h1_title"></a>
     <section class="content index">
         <div class="index-screen">
             <div class="container">
@@ -104,9 +109,9 @@
                 <div class="row money24">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mobile-center text-center">
                         <!--p class="text-center">Мы перезвоним вам через 5 минут и подробно проконсультируем</p-->
-                        <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center" onsubmit="yaCounter48446306.reachGoal('CLICK_CALC')">
+                        <form enctype="multipart/form-data" method="post" id="feedback-form" class="text-center" onsubmit="yaCounter48446306.reachGoal('CLICK_CALC');fbq('track', 'Lead');">
                             <!--h3 class="text-center">Расчитать выплату</h3-->
-                            <p class="text-center"><strong>Загрузите фото и узнайте сумму через 15 минут</strong></p>
+                            <p class="text-center" style="color:#DC271E;"><strong>Загрузите фото и узнайте сумму выплаты через 15 минут</strong></p>
                             <!--label for="nameFF">Имя:</label-->
                             <input type="text" name="nameFF" id="nameFF" required placeholder="Имя, например: Иван Иванович" x-autocompletetype="name" class="w100 border">
                             <!--label for="contactFF">Телефон:</label-->
@@ -137,6 +142,7 @@
             <div class="portfolio color">
                 <div class="container">
                     <div class="col-md-6 col-md-offset-3 title">
+                        <a name="h2_steps"></a>
                         <h2><span>3 шага до выплаты</span></h2>
                         <div class="title-line"></div>
                     </div>
@@ -193,8 +199,7 @@
             </div>
         </div>
 
-
-
+        <a name="h2_figure"></a>
         <!--Компания в цифрах-->
         <div class="color companyInFigure">
             <div class="container">
@@ -229,7 +234,7 @@
             </div>
         </div>
 
-
+        <a name="h2_otziv"></a>
         <!--Примеры выплат-->
         <div class="portfolio white">
             <div class="container">
@@ -289,7 +294,7 @@
                 </div>
             </div>
         </div>
-
+        <a name="h2_doc"></a>
         <!--Документы-->
         <div class="color">
             <div class="container">
@@ -350,7 +355,7 @@
                 <div class="col-md-12 py-5">
 
                     <div class="mb-5 flex-center">
-                        <a>
+                        <!--a>
                             <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
                         </a>
                         <a>
@@ -358,8 +363,8 @@
                         </a>
                         <a>
                             <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
-                        </a>
-                        <a>
+                        </a-->
+                        <a href="https://goo.gl/7NRwk2" target="blank_">
                             <i class="fa fa-vk fa-lg white-text mr-md-5 mr-3 fa-2x fivons"> </i>
                         </a>
                     </div>
@@ -373,7 +378,7 @@
 
         <!--Copyright-->
         <div class="footer-copyright py-3 text-center">
-            «РусЭксперт» © 2011 -
+            <a href="/politica.html" target="blank_">Политика конфиденциальности персональных данных</a><br> «РусЭксперт» © 2011 -
             <script type="text/javascript">
                 document.write(new Date().getFullYear());
             </script>. Все права защищены.
@@ -398,7 +403,7 @@
                 <div class="modal-body"><iframe name="fff" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource.html"></iframe>
                     <iframe name="ggg" style="opacity:0;width:0;height:0;float:right;position:absolute;" src="saved_resource(1).html"></iframe>
                     <div class="answer"></div>
-                    <form target="fff" class="form" action="send_email.php" method="post" enctype="multipart/form-data" onsubmit="yaCounter48446306.reachGoal('CLICK_CALL_BACK')">
+                    <form target="fff" class="form" action="send_email.php" method="post" enctype="multipart/form-data" onsubmit="yaCounter48446306.reachGoal('CLICK_CALL_BACK');fbq('track', 'Lead');">
                         <input type="hidden" name="action" value="form/view">
                         <input type="hidden" name="site_id" value="86">
                         <input type="hidden" name="lang" value="rus">
